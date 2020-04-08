@@ -1,5 +1,5 @@
 // import request module
-const requester = require('request')
+const requester = require('axios')
 const qs = require('querystring')
 const http = require('http')
 
