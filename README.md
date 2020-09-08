@@ -8,7 +8,6 @@
 3. [Path & FS](#exercise-1---path--fs-module)
 4. [URL & Querystring](#exercise-2---url--querystring-module)
 5. [Request](#exercise-3---request-module)
-5. [Http](#exercise-3---http-module)
 
 ## Prerequisites
 - understanding of how to run a node server
