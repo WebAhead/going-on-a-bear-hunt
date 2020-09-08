@@ -144,7 +144,7 @@ eg: `/find?bear=one`
 - If you've put the correct querystring you should see another picture of a bear!
 - There are 4 different pictures you can see depending on your querystring
 
-## Exercise 3a - `request` module
+## Exercise 3 - `request` module
 Request is a very popular module that helps to make HTTP requests as simple as possible and it is built around the Node HTTP core module. [Here](http://stackabuse.com/the-node-js-request-module/) is a brilliant article on the Request module. This can be used for making api calls from your server.
 [📝 see docs](https://github.com/request/request)
 
