@@ -15,6 +15,7 @@ const requestModule = (request, response) => {
     // check for error AND correct status code AND content type
     const { statusCode, headers } = res
     const contentType = headers['content-type']
+
     if (err || statusCode !== 200 || contentType !== 'application/json') {
       // log the errors on the server
       console.log(`Error ${err}`)
@@ -35,4 +36,4 @@ const requestModule = (request, response) => {
 
 }
 
-module.exports = (requestModule)
+module.exports = requestModule

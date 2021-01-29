@@ -6,30 +6,29 @@ const find = require('./find')
 const random = require('./random')
 const notFound = require('./not_found')
 
-const router = ((request, response) => {
+const router = (request, response) => {
   // basic route logger
   console.log(`${request.method} ${request.url}`)
-  
+
   // grab pathname 
   const { pathname } = url.parse(request.url)
-  
+
   // router
-  switch(pathname){
-    case `/`:
-      return home(request, response);
+  if (pathname === '/') {
+    return home(request, response);
 
-    case `/one`:
-      return one(request, response);
+  } else if (pathname === '/one') {
+    return one(request, response);
 
-    case `/find`:
-      return find(request,response);
+  } else if (pathname === '/find') {
+    return find(request, response);
 
-    case `/random`:
-      return random(request, response);
+  } else if (pathname === '/random') {
+    return random(request, response);
 
-    default:
-      return notFound(request, response);
-    }
-})
+  } else {
+    return notFound(request, response);
+  }
+}
 
 module.exports = router;

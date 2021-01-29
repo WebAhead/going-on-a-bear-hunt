@@ -1,7 +1,7 @@
 const path = require('path')
 const fs = require('fs')
 
-module.exports = ((request, response) => {
+module.exports = (request, response) => {
   const pathToBearOne = path.join(__dirname, '..', 'woods', 'bear_one.jpg')
   fs.readFile(pathToBearOne, (err, file) => {
     if (err) {
@@ -12,4 +12,4 @@ module.exports = ((request, response) => {
     response.writeHead(200, { 'Content-Type': 'image/jpeg' })
     response.end(file)
   })
-})
+}
